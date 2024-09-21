@@ -22,6 +22,9 @@
 		BDD751B12C9EFD9300A9A727 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDD751B02C9EFD9300A9A727 /* Poppins-Medium.ttf */; };
 		BDD751B42C9EFE9500A9A727 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751B32C9EFE9500A9A727 /* Components.swift */; };
 		BDD751B62C9EFEC200A9A727 /* AppSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751B52C9EFEC200A9A727 /* AppSpacing.swift */; };
+		BDD751BB2C9F004D00A9A727 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751BA2C9F004D00A9A727 /* SplashView.swift */; };
+		BDD751BE2C9F011A00A9A727 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751BD2C9F011A00A9A727 /* AppCoordinator.swift */; };
+		BDD751C12C9F019500A9A727 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751C02C9F019500A9A727 /* SplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +61,11 @@
 		BDD751AC2C9EFD6800A9A727 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		BDD751AE2C9EFD8A00A9A727 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		BDD751B02C9EFD9300A9A727 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
-		BDD751B22C9EFDC200A9A727 /* Elm-task-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Elm-task-Info.plist"; path = "Elm_task/Assets/Elm-task-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BDD751B32C9EFE9500A9A727 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		BDD751B52C9EFEC200A9A727 /* AppSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpacing.swift; sourceTree = "<group>"; };
+		BDD751BA2C9F004D00A9A727 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		BDD751BD2C9F011A00A9A727 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		BDD751C02C9F019500A9A727 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +116,10 @@
 		BDD751782C9EEB6500A9A727 /* Elm_task */ = {
 			isa = PBXGroup;
 			children = (
-				BDD751A82C9EFC5900A9A727 /* Assets */,
+				BDD751BC2C9F010000A9A727 /* Coordinator */,
+				BDD751B72C9EFFBC00A9A727 /* Features */,
 				BDD751A32C9EF7A300A9A727 /* DesignSystem */,
+				BDD751A82C9EFC5900A9A727 /* Assets */,
 				BDD751792C9EEB6500A9A727 /* Elm_taskApp.swift */,
 				BDD7517B2C9EEB6500A9A727 /* ContentView.swift */,
 				BDD7517F2C9EEB6A00A9A727 /* Preview Content */,
@@ -161,7 +168,6 @@
 			children = (
 				BDD751A92C9EFC7400A9A727 /* Font */,
 				BDD7517D2C9EEB6A00A9A727 /* Assets.xcassets */,
-				BDD751B22C9EFDC200A9A727 /* Elm-task-Info.plist */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -175,6 +181,47 @@
 				BDD751AA2C9EFD4C00A9A727 /* Poppins-Bold.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		BDD751B72C9EFFBC00A9A727 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				BDD751B82C9EFFE100A9A727 /* Splash */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		BDD751B82C9EFFE100A9A727 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				BDD751BF2C9F015200A9A727 /* View Model */,
+				BDD751B92C9F001B00A9A727 /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		BDD751B92C9F001B00A9A727 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDD751BA2C9F004D00A9A727 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDD751BC2C9F010000A9A727 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BDD751BD2C9F011A00A9A727 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		BDD751BF2C9F015200A9A727 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDD751C02C9F019500A9A727 /* SplashViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,9 +361,12 @@
 				BDD7517C2C9EEB6500A9A727 /* ContentView.swift in Sources */,
 				BDD751B62C9EFEC200A9A727 /* AppSpacing.swift in Sources */,
 				BDD751A52C9EF7C400A9A727 /* Colors.swift in Sources */,
+				BDD751C12C9F019500A9A727 /* SplashViewModel.swift in Sources */,
 				BDD751B42C9EFE9500A9A727 /* Components.swift in Sources */,
+				BDD751BE2C9F011A00A9A727 /* AppCoordinator.swift in Sources */,
 				BDD751A72C9EFBDE00A9A727 /* Typography.swift in Sources */,
 				BDD7517A2C9EEB6500A9A727 /* Elm_taskApp.swift in Sources */,
+				BDD751BB2C9F004D00A9A727 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
