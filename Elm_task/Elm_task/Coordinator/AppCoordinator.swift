@@ -8,17 +8,20 @@
 import Foundation
 import SwiftUI
 
-enum AppView {
-    case splash
-    case login
-}
 
 class AppCoordinator: ObservableObject {
-    @Published var currentView: AppView = .splash
+    @Published var currentView: AppFlow = .splash
+       @Published var authCoordinator = AuthCoordinator()
     
-    func navigateToLogin() {
-            currentView = .login
-        }
-    
-    }
+    func navigateToAuthFlow() {
+           currentView = .auth
+       }
+
+   }
+
+   enum AppFlow {
+       case splash
+       case auth
+       
+   }
 

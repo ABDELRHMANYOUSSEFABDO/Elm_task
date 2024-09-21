@@ -29,6 +29,16 @@
 		BDD751C82C9F129E00A9A727 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751C72C9F129E00A9A727 /* HTTPMethod.swift */; };
 		BDD751CA2C9F12F600A9A727 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751C92C9F12F600A9A727 /* NetworkService.swift */; };
 		BDD751CE2C9F183A00A9A727 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751CD2C9F183A00A9A727 /* APIConstants.swift */; };
+		BDD751D52C9F1B0300A9A727 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751D42C9F1B0300A9A727 /* Model.swift */; };
+		BDD751D72C9F1D1600A9A727 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751D62C9F1D1600A9A727 /* AuthService.swift */; };
+		BDD751D92C9F1E7D00A9A727 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751D82C9F1E7D00A9A727 /* LoginViewModel.swift */; };
+		BDD751DB2C9F1EB500A9A727 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751DA2C9F1EB500A9A727 /* LoginView.swift */; };
+		BDE148412C9F436100F47DCE /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE148402C9F436100F47DCE /* OTPViewModel.swift */; };
+		BDE148432C9F438C00F47DCE /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE148422C9F438C00F47DCE /* OTPView.swift */; };
+		BDE148452C9F440900F47DCE /* OtpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE148442C9F440900F47DCE /* OtpModel.swift */; };
+		BDE148472C9F54B800F47DCE /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE148462C9F54B800F47DCE /* AuthCoordinator.swift */; };
+		BDE1484A2C9F558700F47DCE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE148492C9F558700F47DCE /* RootView.swift */; };
+		BDE1484C2C9F55C100F47DCE /* AuthFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE1484B2C9F55C100F47DCE /* AuthFlowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +84,16 @@
 		BDD751C72C9F129E00A9A727 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		BDD751C92C9F12F600A9A727 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		BDD751CD2C9F183A00A9A727 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		BDD751D42C9F1B0300A9A727 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BDD751D62C9F1D1600A9A727 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		BDD751D82C9F1E7D00A9A727 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		BDD751DA2C9F1EB500A9A727 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BDE148402C9F436100F47DCE /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		BDE148422C9F438C00F47DCE /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		BDE148442C9F440900F47DCE /* OtpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpModel.swift; sourceTree = "<group>"; };
+		BDE148462C9F54B800F47DCE /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		BDE148492C9F558700F47DCE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		BDE1484B2C9F55C100F47DCE /* AuthFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +144,7 @@
 		BDD751782C9EEB6500A9A727 /* Elm_task */ = {
 			isa = PBXGroup;
 			children = (
+				BDE148482C9F557A00F47DCE /* Root */,
 				BDD751C42C9F124F00A9A727 /* Network */,
 				BDD751BC2C9F010000A9A727 /* Coordinator */,
 				BDD751B72C9EFFBC00A9A727 /* Features */,
@@ -195,6 +216,7 @@
 		BDD751B72C9EFFBC00A9A727 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				BDD751CF2C9F18FB00A9A727 /* Auth */,
 				BDD751B82C9EFFE100A9A727 /* Splash */,
 			);
 			path = Features;
@@ -221,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				BDD751BD2C9F011A00A9A727 /* AppCoordinator.swift */,
+				BDE148462C9F54B800F47DCE /* AuthCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -240,8 +263,95 @@
 				BDD751C72C9F129E00A9A727 /* HTTPMethod.swift */,
 				BDD751C92C9F12F600A9A727 /* NetworkService.swift */,
 				BDD751CD2C9F183A00A9A727 /* APIConstants.swift */,
+				BDD751D62C9F1D1600A9A727 /* AuthService.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		BDD751CF2C9F18FB00A9A727 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				BDE1483C2C9F428500F47DCE /* Otp */,
+				BDD751D02C9F190900A9A727 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		BDD751D02C9F190900A9A727 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BDD751D32C9F197300A9A727 /* Model */,
+				BDD751D22C9F196500A9A727 /* ViewModel */,
+				BDD751D12C9F195A00A9A727 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BDD751D12C9F195A00A9A727 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDD751DA2C9F1EB500A9A727 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDD751D22C9F196500A9A727 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BDD751D82C9F1E7D00A9A727 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BDD751D32C9F197300A9A727 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDD751D42C9F1B0300A9A727 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDE1483C2C9F428500F47DCE /* Otp */ = {
+			isa = PBXGroup;
+			children = (
+				BDE1483F2C9F42A900F47DCE /* Model */,
+				BDE1483E2C9F429800F47DCE /* ViewMode */,
+				BDE1483D2C9F428E00F47DCE /* View */,
+			);
+			path = Otp;
+			sourceTree = "<group>";
+		};
+		BDE1483D2C9F428E00F47DCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDE148422C9F438C00F47DCE /* OTPView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDE1483E2C9F429800F47DCE /* ViewMode */ = {
+			isa = PBXGroup;
+			children = (
+				BDE148402C9F436100F47DCE /* OTPViewModel.swift */,
+			);
+			path = ViewMode;
+			sourceTree = "<group>";
+		};
+		BDE1483F2C9F42A900F47DCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDE148442C9F440900F47DCE /* OtpModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDE148482C9F557A00F47DCE /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				BDE148492C9F558700F47DCE /* RootView.swift */,
+				BDE1484B2C9F55C100F47DCE /* AuthFlowView.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +378,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDD7519D2C9EEB6B00A9A727 /* Build configuration list for PBXNativeTarget "Elm_taskTests" */;
 			buildPhases = (
+				2CFAB1E2B1BCD810690CDF86 /* [CP] Check Pods Manifest.lock */,
 				BDD751822C9EEB6B00A9A727 /* Sources */,
 				BDD751832C9EEB6B00A9A727 /* Frameworks */,
 				BDD751842C9EEB6B00A9A727 /* Resources */,
@@ -286,9 +397,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDD751A02C9EEB6B00A9A727 /* Build configuration list for PBXNativeTarget "Elm_taskUITests" */;
 			buildPhases = (
+				A7465555D42EF8BD9AA7C681 /* [CP] Check Pods Manifest.lock */,
 				BDD7518C2C9EEB6B00A9A727 /* Sources */,
 				BDD7518D2C9EEB6B00A9A727 /* Frameworks */,
 				BDD7518E2C9EEB6B00A9A727 /* Resources */,
+				6549817A65694D22106F6E22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,23 +486,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CFAB1E2B1BCD810690CDF86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Elm_taskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6549817A65694D22106F6E22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Elm_task-Elm_taskUITests/Pods-Elm_task-Elm_taskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Elm_task-Elm_taskUITests/Pods-Elm_task-Elm_taskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Elm_task-Elm_taskUITests/Pods-Elm_task-Elm_taskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7465555D42EF8BD9AA7C681 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Elm_task-Elm_taskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BDD751722C9EEB6500A9A727 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BDD7517C2C9EEB6500A9A727 /* ContentView.swift in Sources */,
+				BDE1484C2C9F55C100F47DCE /* AuthFlowView.swift in Sources */,
 				BDD751B62C9EFEC200A9A727 /* AppSpacing.swift in Sources */,
 				BDD751A52C9EF7C400A9A727 /* Colors.swift in Sources */,
 				BDD751C82C9F129E00A9A727 /* HTTPMethod.swift in Sources */,
+				BDE148472C9F54B800F47DCE /* AuthCoordinator.swift in Sources */,
+				BDD751D92C9F1E7D00A9A727 /* LoginViewModel.swift in Sources */,
 				BDD751C12C9F019500A9A727 /* SplashViewModel.swift in Sources */,
 				BDD751B42C9EFE9500A9A727 /* Components.swift in Sources */,
 				BDD751BE2C9F011A00A9A727 /* AppCoordinator.swift in Sources */,
+				BDD751D52C9F1B0300A9A727 /* Model.swift in Sources */,
+				BDE1484A2C9F558700F47DCE /* RootView.swift in Sources */,
 				BDD751CE2C9F183A00A9A727 /* APIConstants.swift in Sources */,
+				BDD751DB2C9F1EB500A9A727 /* LoginView.swift in Sources */,
 				BDD751A72C9EFBDE00A9A727 /* Typography.swift in Sources */,
 				BDD7517A2C9EEB6500A9A727 /* Elm_taskApp.swift in Sources */,
 				BDD751BB2C9F004D00A9A727 /* SplashView.swift in Sources */,
+				BDE148412C9F436100F47DCE /* OTPViewModel.swift in Sources */,
+				BDD751D72C9F1D1600A9A727 /* AuthService.swift in Sources */,
 				BDD751CA2C9F12F600A9A727 /* NetworkService.swift in Sources */,
+				BDE148452C9F440900F47DCE /* OtpModel.swift in Sources */,
+				BDE148432C9F438C00F47DCE /* OTPView.swift in Sources */,
 				BDD751C62C9F128700A9A727 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,6 +742,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Elm_task/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Elm-task-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -584,6 +772,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Elm_task/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Elm-task-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

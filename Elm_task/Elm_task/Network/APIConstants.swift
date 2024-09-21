@@ -17,4 +17,13 @@ struct APIConstants {
         static let postIncident = "/incident"
         static let changeStatus = "/incident/status"
     }
-} 
+}
+
+class URLBuilder {
+    static func buildURL(for endpoint: String) -> URL? {
+        var components = URLComponents(string: APIConstants.baseURL)
+        components?.path = endpoint
+        return components?.url
+    }
+}
+
