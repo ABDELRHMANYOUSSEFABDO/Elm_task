@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDD7517A2C9EEB6500A9A727 /* Elm_taskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751792C9EEB6500A9A727 /* Elm_taskApp.swift */; };
+		BDD7517C2C9EEB6500A9A727 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7517B2C9EEB6500A9A727 /* ContentView.swift */; };
+		BDD7517E2C9EEB6A00A9A727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD7517D2C9EEB6A00A9A727 /* Assets.xcassets */; };
+		BDD751812C9EEB6A00A9A727 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD751802C9EEB6A00A9A727 /* Preview Assets.xcassets */; };
+		BDD7518B2C9EEB6B00A9A727 /* Elm_taskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7518A2C9EEB6B00A9A727 /* Elm_taskTests.swift */; };
+		BDD751952C9EEB6B00A9A727 /* Elm_taskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751942C9EEB6B00A9A727 /* Elm_taskUITests.swift */; };
+		BDD751972C9EEB6B00A9A727 /* Elm_taskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD751962C9EEB6B00A9A727 /* Elm_taskUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDD751872C9EEB6B00A9A727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDD7516E2C9EEB6500A9A727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDD751752C9EEB6500A9A727;
+			remoteInfo = Elm_task;
+		};
+		BDD751912C9EEB6B00A9A727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDD7516E2C9EEB6500A9A727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDD751752C9EEB6500A9A727;
+			remoteInfo = Elm_task;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDD751762C9EEB6500A9A727 /* Elm_task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elm_task.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD751792C9EEB6500A9A727 /* Elm_taskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elm_taskApp.swift; sourceTree = "<group>"; };
+		BDD7517B2C9EEB6500A9A727 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BDD7517D2C9EEB6A00A9A727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDD751802C9EEB6A00A9A727 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BDD751862C9EEB6B00A9A727 /* Elm_taskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Elm_taskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD7518A2C9EEB6B00A9A727 /* Elm_taskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elm_taskTests.swift; sourceTree = "<group>"; };
+		BDD751902C9EEB6B00A9A727 /* Elm_taskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Elm_taskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD751942C9EEB6B00A9A727 /* Elm_taskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elm_taskUITests.swift; sourceTree = "<group>"; };
+		BDD751962C9EEB6B00A9A727 /* Elm_taskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elm_taskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDD751732C9EEB6500A9A727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD751832C9EEB6B00A9A727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD7518D2C9EEB6B00A9A727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDD7516D2C9EEB6400A9A727 = {
+			isa = PBXGroup;
+			children = (
+				BDD751782C9EEB6500A9A727 /* Elm_task */,
+				BDD751892C9EEB6B00A9A727 /* Elm_taskTests */,
+				BDD751932C9EEB6B00A9A727 /* Elm_taskUITests */,
+				BDD751772C9EEB6500A9A727 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDD751772C9EEB6500A9A727 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDD751762C9EEB6500A9A727 /* Elm_task.app */,
+				BDD751862C9EEB6B00A9A727 /* Elm_taskTests.xctest */,
+				BDD751902C9EEB6B00A9A727 /* Elm_taskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDD751782C9EEB6500A9A727 /* Elm_task */ = {
+			isa = PBXGroup;
+			children = (
+				BDD751792C9EEB6500A9A727 /* Elm_taskApp.swift */,
+				BDD7517B2C9EEB6500A9A727 /* ContentView.swift */,
+				BDD7517D2C9EEB6A00A9A727 /* Assets.xcassets */,
+				BDD7517F2C9EEB6A00A9A727 /* Preview Content */,
+			);
+			path = Elm_task;
+			sourceTree = "<group>";
+		};
+		BDD7517F2C9EEB6A00A9A727 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BDD751802C9EEB6A00A9A727 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BDD751892C9EEB6B00A9A727 /* Elm_taskTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDD7518A2C9EEB6B00A9A727 /* Elm_taskTests.swift */,
+			);
+			path = Elm_taskTests;
+			sourceTree = "<group>";
+		};
+		BDD751932C9EEB6B00A9A727 /* Elm_taskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDD751942C9EEB6B00A9A727 /* Elm_taskUITests.swift */,
+				BDD751962C9EEB6B00A9A727 /* Elm_taskUITestsLaunchTests.swift */,
+			);
+			path = Elm_taskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDD751752C9EEB6500A9A727 /* Elm_task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD7519A2C9EEB6B00A9A727 /* Build configuration list for PBXNativeTarget "Elm_task" */;
+			buildPhases = (
+				BDD751722C9EEB6500A9A727 /* Sources */,
+				BDD751732C9EEB6500A9A727 /* Frameworks */,
+				BDD751742C9EEB6500A9A727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Elm_task;
+			productName = Elm_task;
+			productReference = BDD751762C9EEB6500A9A727 /* Elm_task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDD751852C9EEB6B00A9A727 /* Elm_taskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD7519D2C9EEB6B00A9A727 /* Build configuration list for PBXNativeTarget "Elm_taskTests" */;
+			buildPhases = (
+				BDD751822C9EEB6B00A9A727 /* Sources */,
+				BDD751832C9EEB6B00A9A727 /* Frameworks */,
+				BDD751842C9EEB6B00A9A727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDD751882C9EEB6B00A9A727 /* PBXTargetDependency */,
+			);
+			name = Elm_taskTests;
+			productName = Elm_taskTests;
+			productReference = BDD751862C9EEB6B00A9A727 /* Elm_taskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDD7518F2C9EEB6B00A9A727 /* Elm_taskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD751A02C9EEB6B00A9A727 /* Build configuration list for PBXNativeTarget "Elm_taskUITests" */;
+			buildPhases = (
+				BDD7518C2C9EEB6B00A9A727 /* Sources */,
+				BDD7518D2C9EEB6B00A9A727 /* Frameworks */,
+				BDD7518E2C9EEB6B00A9A727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDD751922C9EEB6B00A9A727 /* PBXTargetDependency */,
+			);
+			name = Elm_taskUITests;
+			productName = Elm_taskUITests;
+			productReference = BDD751902C9EEB6B00A9A727 /* Elm_taskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDD7516E2C9EEB6500A9A727 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					BDD751752C9EEB6500A9A727 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					BDD751852C9EEB6B00A9A727 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = BDD751752C9EEB6500A9A727;
+					};
+					BDD7518F2C9EEB6B00A9A727 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = BDD751752C9EEB6500A9A727;
+					};
+				};
+			};
+			buildConfigurationList = BDD751712C9EEB6500A9A727 /* Build configuration list for PBXProject "Elm_task" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDD7516D2C9EEB6400A9A727;
+			productRefGroup = BDD751772C9EEB6500A9A727 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDD751752C9EEB6500A9A727 /* Elm_task */,
+				BDD751852C9EEB6B00A9A727 /* Elm_taskTests */,
+				BDD7518F2C9EEB6B00A9A727 /* Elm_taskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDD751742C9EEB6500A9A727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD751812C9EEB6A00A9A727 /* Preview Assets.xcassets in Resources */,
+				BDD7517E2C9EEB6A00A9A727 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD751842C9EEB6B00A9A727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD7518E2C9EEB6B00A9A727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDD751722C9EEB6500A9A727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD7517C2C9EEB6500A9A727 /* ContentView.swift in Sources */,
+				BDD7517A2C9EEB6500A9A727 /* Elm_taskApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD751822C9EEB6B00A9A727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD7518B2C9EEB6B00A9A727 /* Elm_taskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD7518C2C9EEB6B00A9A727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD751972C9EEB6B00A9A727 /* Elm_taskUITestsLaunchTests.swift in Sources */,
+				BDD751952C9EEB6B00A9A727 /* Elm_taskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDD751882C9EEB6B00A9A727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDD751752C9EEB6500A9A727 /* Elm_task */;
+			targetProxy = BDD751872C9EEB6B00A9A727 /* PBXContainerItemProxy */;
+		};
+		BDD751922C9EEB6B00A9A727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDD751752C9EEB6500A9A727 /* Elm_task */;
+			targetProxy = BDD751912C9EEB6B00A9A727 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BDD751982C9EEB6B00A9A727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDD751992C9EEB6B00A9A727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDD7519B2C9EEB6B00A9A727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Elm_task/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Elm.challenge.Elm-task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDD7519C2C9EEB6B00A9A727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Elm_task/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Elm.challenge.Elm-task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDD7519E2C9EEB6B00A9A727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Elm.challenge.Elm-taskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elm_task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Elm_task";
+			};
+			name = Debug;
+		};
+		BDD7519F2C9EEB6B00A9A727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Elm.challenge.Elm-taskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elm_task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Elm_task";
+			};
+			name = Release;
+		};
+		BDD751A12C9EEB6B00A9A727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Elm.challenge.Elm-taskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Elm_task;
+			};
+			name = Debug;
+		};
+		BDD751A22C9EEB6B00A9A727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Elm.challenge.Elm-taskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Elm_task;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDD751712C9EEB6500A9A727 /* Build configuration list for PBXProject "Elm_task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD751982C9EEB6B00A9A727 /* Debug */,
+				BDD751992C9EEB6B00A9A727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD7519A2C9EEB6B00A9A727 /* Build configuration list for PBXNativeTarget "Elm_task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD7519B2C9EEB6B00A9A727 /* Debug */,
+				BDD7519C2C9EEB6B00A9A727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD7519D2C9EEB6B00A9A727 /* Build configuration list for PBXNativeTarget "Elm_taskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD7519E2C9EEB6B00A9A727 /* Debug */,
+				BDD7519F2C9EEB6B00A9A727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD751A02C9EEB6B00A9A727 /* Build configuration list for PBXNativeTarget "Elm_taskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD751A12C9EEB6B00A9A727 /* Debug */,
+				BDD751A22C9EEB6B00A9A727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDD7516E2C9EEB6500A9A727 /* Project object */;
+}
