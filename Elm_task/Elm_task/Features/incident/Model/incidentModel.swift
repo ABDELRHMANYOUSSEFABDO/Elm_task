@@ -17,8 +17,8 @@ struct Incident: Identifiable, Codable {
     let status: Int
     let priority: Int?
     let createdAt: Date
-
-   
+    
+    
     enum CodingKeys: String, CodingKey {
         case id
         case description
@@ -26,7 +26,7 @@ struct Incident: Identifiable, Codable {
         case priority
         case createdAt
     }
-
+    
     
     init(id: String, description: String, status: Int, priority: Int?, createdAt: Date) {
         self.id = id
@@ -35,7 +35,7 @@ struct Incident: Identifiable, Codable {
         self.priority = priority
         self.createdAt = createdAt
     }
-
+    
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -44,8 +44,8 @@ struct Incident: Identifiable, Codable {
         description = try container.decode(String.self, forKey: .description)
         status = try container.decode(Int.self, forKey: .status)
         priority = try container.decodeIfPresent(Int.self, forKey: .priority)
-
-       
+        
+        
         let createdAtString = try container.decode(String.self, forKey: .createdAt)
         if let date = Incident.dateFormatter.date(from: createdAtString) {
             createdAt = date
@@ -56,7 +56,7 @@ struct Incident: Identifiable, Codable {
         }
     }
     
-   
+    
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
@@ -88,38 +88,4 @@ extension Incident {
             createdAt: Date()
         )
     }
-}
-
-
-
-
-
-struct AddIncident: Codable {
-    let description: String
-    let latitude: Double
-    let longitude: Double
-    let status: Int
-    let typeId: Int
-    let priority: Int?
-    let issuerId: String
-}
-
-
-
-struct IncidentTypesResponse: Codable {
-    let types: [IncidentType]
-}
-
-struct IncidentType: Codable, Identifiable {
-    let id: Int
-    let arabicName: String
-    let englishName: String
-    let subTypes: [SubType]
-}
-
-struct SubType: Codable, Identifiable {
-    let id: Int
-    let arabicName: String
-    let englishName: String
-    let categoryId: Int
 }

@@ -81,7 +81,7 @@ class IncidentService {
             return Fail(error: NetworkError.invalidURL)
                 .eraseToAnyPublisher()
         }
-
+        
         return NetworkService.shared.request(url: url, method: .get, body: nil, requiresDecoding: true, token: token)
             .tryMap { (incidentTypesResponse: [IncidentType]) in
                 return incidentTypesResponse // Parse the response and return the incident types
@@ -89,7 +89,7 @@ class IncidentService {
             .mapError { NetworkError.networkError($0) }
             .eraseToAnyPublisher()
     }
-
+    
     
     
 }

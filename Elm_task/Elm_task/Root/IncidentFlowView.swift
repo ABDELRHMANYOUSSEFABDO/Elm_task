@@ -9,12 +9,12 @@ import SwiftUI
 
 struct IncidentFlowView: View {
     @EnvironmentObject var incidentCoordinator: IncidentCoordinator
-
+    
     var body: some View {
         switch incidentCoordinator.currentView {
         case .list:
             IncidentListView(viewModel: IncidentListViewModel(incidentService: IncidentService(), coordinator: incidentCoordinator))
-        
+            
         case .dashboard:
             DashboardView(viewModel: DashboardViewModel(incidentService: IncidentService(), coordinator: incidentCoordinator))
         case .add:

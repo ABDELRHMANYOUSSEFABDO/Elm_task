@@ -33,7 +33,7 @@ struct DashboardView: View {
                 .padding()
                 .chartXAxisLabel("Incident Status")
                 .chartYAxisLabel("Count")
-
+                
                 Spacer()
             }
             .navigationTitle("Incident Dashboard")

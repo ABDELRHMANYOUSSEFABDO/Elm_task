@@ -22,22 +22,29 @@ struct NewIncidentView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            // Incident Description
+            
             TextField("Incident Description", text: $description)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+                .onTapGesture {
+                    self.dismissKeyboard()
+                }
             
-            // Latitude (Auto-filled by CoreLocation)
             TextField("Latitude", text: $latitude)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-                .disabled(true) // Make it read-only
-            
-            // Longitude (Auto-filled by CoreLocation)
+                .disabled(true) // Read-only field
+                .onTapGesture {
+                    self.dismissKeyboard()
+                }
+           
             TextField("Longitude", text: $longitude)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-                .disabled(true) // Make it read-only
+                .disabled(true) // Read-only field
+                .onTapGesture {
+                    self.dismissKeyboard()
+                }
             
             // Status Picker
             Picker("Status", selection: $selectedStatus) {
@@ -61,11 +68,14 @@ struct NewIncidentView: View {
             
             
             Button(action: {
+                self.dismissKeyboard() // Dismiss keyboard when button is pressed
+                
                 guard let latitudeValue = Double(latitude), let longitudeValue = Double(longitude), let typeId = selectedTypeId else {
-                   
+                    // Handle invalid input, return if validation fails
                     return
                 }
                 
+                // Call the postIncident function from the view model
                 viewModel.postIncident(
                     description: description,
                     latitude: latitudeValue,
@@ -83,15 +93,9 @@ struct NewIncidentView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
-            .navigationBarItems(leading: Button(action: {
-                viewModel.back()
-                   }) {
-                       Image(systemName: "chevron.left")
-                           .foregroundColor(.blue)
-                   })
             .padding()
             
-            
+            // Success Message
             if let successMessage = viewModel.successMessage {
                 Text(successMessage)
                     .foregroundColor(.green)
@@ -100,6 +104,12 @@ struct NewIncidentView: View {
             
             Spacer()
         }
+        .navigationBarItems(leading: Button(action: {
+            viewModel.back() // Back button action
+        }) {
+            Image(systemName: "chevron.left")
+                .foregroundColor(.blue)
+        })
         .navigationTitle("Submit Incident")
         .padding()
         .onAppear {
@@ -113,7 +123,13 @@ struct NewIncidentView: View {
             }
         }
     }
+    
+    // Helper function to dismiss the keyboard
+    private func dismissKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
 }
+
 
 struct NewIncidentView_Previews: PreviewProvider {
     static var previews: some View {

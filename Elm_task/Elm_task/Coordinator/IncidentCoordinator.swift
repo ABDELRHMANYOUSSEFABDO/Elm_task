@@ -8,25 +8,24 @@
 import Foundation
 class IncidentCoordinator: ObservableObject {
     @Published var currentView: IncidentView = .list
-
- 
     
     func goBack() {
-            currentView = .list
-        }
+        currentView = .list
+    }
     
-
     func navigateToIncidentDashboard() {
         currentView = .dashboard
     }
+    
     func navigateToIncidentAdd() {
         currentView = .add
     }
+    
 }
 
 enum IncidentView {
     case list
     case dashboard
     case add
-   
+    
 }

@@ -100,8 +100,8 @@ struct IncidentListView: View {
                 }
             }
         }
-   
-
+        
+        
         .onAppear {
             viewModel.fetchIncidents()
         }

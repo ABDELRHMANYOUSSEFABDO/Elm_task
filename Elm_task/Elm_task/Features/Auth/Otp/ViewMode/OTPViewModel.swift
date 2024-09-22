@@ -10,7 +10,6 @@ import Combine
 
 class OTPViewModel: ObservableObject {
     @Published var email: String
-//    @Published var otp: String = ""
     @Published var isLoading: Bool = false
     @Published var otpSuccess: Bool = false
     @Published var errorMessage: String?
@@ -46,7 +45,7 @@ class OTPViewModel: ObservableObject {
                     break
                 }
             } receiveValue: { response in
-                // Handle successful OTP verification
+               
                 KeychainManager.save(token: response.token, forKey: "authToken")
 
                 self.navigateToIncidentList()

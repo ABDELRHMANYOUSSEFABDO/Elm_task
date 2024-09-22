@@ -54,6 +54,8 @@
 		BDE534022C9F9FE10026C91A /* AddIncidentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE534012C9F9FE00026C91A /* AddIncidentListViewModel.swift */; };
 		BDE534042C9FA2170026C91A /* NewIncidentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE534032C9FA2170026C91A /* NewIncidentView.swift */; };
 		BDE534062C9FA5E50026C91A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE534052C9FA5E50026C91A /* LocationManager.swift */; };
+		BDE534082C9FAE390026C91A /* AddIncidentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE534072C9FAE390026C91A /* AddIncidentModel.swift */; };
+		BDE5340A2C9FAE5C0026C91A /* IncidentTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE534092C9FAE5C0026C91A /* IncidentTypeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,8 @@
 		BDE534012C9F9FE00026C91A /* AddIncidentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncidentListViewModel.swift; sourceTree = "<group>"; };
 		BDE534032C9FA2170026C91A /* NewIncidentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIncidentView.swift; sourceTree = "<group>"; };
 		BDE534052C9FA5E50026C91A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		BDE534072C9FAE390026C91A /* AddIncidentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncidentModel.swift; sourceTree = "<group>"; };
+		BDE534092C9FAE5C0026C91A /* IncidentTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentTypeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,6 +437,8 @@
 			isa = PBXGroup;
 			children = (
 				BDE148562C9F6C9F00F47DCE /* incidentModel.swift */,
+				BDE534072C9FAE390026C91A /* AddIncidentModel.swift */,
+				BDE534092C9FAE5C0026C91A /* IncidentTypeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -706,6 +712,7 @@
 				BDE1484A2C9F558700F47DCE /* RootView.swift in Sources */,
 				BDD751CE2C9F183A00A9A727 /* APIConstants.swift in Sources */,
 				BDD751DB2C9F1EB500A9A727 /* LoginView.swift in Sources */,
+				BDE534082C9FAE390026C91A /* AddIncidentModel.swift in Sources */,
 				BDD751A72C9EFBDE00A9A727 /* Typography.swift in Sources */,
 				BDD7517A2C9EEB6500A9A727 /* Elm_taskApp.swift in Sources */,
 				BDE533FC2C9F96C00026C91A /* DashboardViewModel.swift in Sources */,
@@ -714,6 +721,7 @@
 				BDD751D72C9F1D1600A9A727 /* AuthService.swift in Sources */,
 				BDD751CA2C9F12F600A9A727 /* NetworkService.swift in Sources */,
 				BDE148452C9F440900F47DCE /* OtpModel.swift in Sources */,
+				BDE5340A2C9FAE5C0026C91A /* IncidentTypeModel.swift in Sources */,
 				BDE148432C9F438C00F47DCE /* OTPView.swift in Sources */,
 				BDD751C62C9F128700A9A727 /* NetworkError.swift in Sources */,
 				BDE534062C9FA5E50026C91A /* LocationManager.swift in Sources */,
@@ -881,10 +889,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Elm_task/Preview Content\"";
+				DEVELOPMENT_TEAM = 4J3762F8R7;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Elm-task-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to track incidents even when the app is in the background";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to submit incident details";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -911,10 +923,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Elm_task/Preview Content\"";
+				DEVELOPMENT_TEAM = 4J3762F8R7;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Elm-task-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to track incidents even when the app is in the background";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to submit incident details";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

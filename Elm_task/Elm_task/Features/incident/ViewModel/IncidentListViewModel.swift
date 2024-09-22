@@ -25,7 +25,6 @@ class IncidentListViewModel: ObservableObject {
         self.coordinator = coordinator
     }
 
-    // Fetch incidents from the server
     func fetchIncidents() {
         guard let token = KeychainManager.getToken(forKey: "authToken") else {
                     errorMessage = "No authentication token found"
@@ -51,7 +50,6 @@ class IncidentListViewModel: ObservableObject {
             .store(in: &cancellables)
     }
 
-    // Filter incidents based on the selected status and date
     func filterIncidents() {
         filteredIncidents = incidents.filter { incident in
             let statusMatches = selectedStatus == -1 || incident.status == selectedStatus
