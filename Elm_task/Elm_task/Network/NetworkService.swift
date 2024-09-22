@@ -5,9 +5,15 @@ class NetworkService {
     static let shared = NetworkService()
     private init() {}
 
-    func request<T: Decodable>(url: URL, method: HTTPMethod = .get, body: Data? = nil, requiresDecoding: Bool = true) -> AnyPublisher<T, NetworkError> {
+    func request<T: Decodable>(url: URL, method: HTTPMethod = .get, body: Data? = nil, requiresDecoding: Bool = true, token: String? = nil) -> AnyPublisher<T, NetworkError> {
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
+        
+        // Set token if available
+        if let token = token {
+            request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        }
+        
         if let body = body {
             request.httpBody = body
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -21,9 +27,7 @@ class NetworkService {
                 }
 
                 if !requiresDecoding {
-                    
                     if let stringResponse = String(data: data, encoding: .utf8), stringResponse == "OK" {
-                        
                         return stringResponse as! T
                     } else {
                         throw NetworkError.invalidResponse

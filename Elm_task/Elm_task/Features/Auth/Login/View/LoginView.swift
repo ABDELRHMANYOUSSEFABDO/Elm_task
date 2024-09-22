@@ -64,10 +64,10 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        // Create a dummy coordinator for preview purposes
+       
         let previewCoordinator = AuthCoordinator()
 
-        // Pass the dummy coordinator to the LoginViewModel for the preview
+        
         LoginView(viewModel: LoginViewModel(coordinator: previewCoordinator))
     }
 }

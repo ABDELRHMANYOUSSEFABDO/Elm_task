@@ -19,6 +19,9 @@ struct RootView: View {
             case .splash:
                 let splashViewModel = SplashViewModel(coordinator: appCoordinator)
                 SplashView(viewModel: splashViewModel)
+            case .incident:
+                IncidentFlowView()
+                .environmentObject(appCoordinator.incidentCoordinator)
             }
         }
     }

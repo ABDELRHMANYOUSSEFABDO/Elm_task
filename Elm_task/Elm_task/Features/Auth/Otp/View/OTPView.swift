@@ -85,10 +85,11 @@ struct OTPView: View {
 
 struct OTPView_Previews: PreviewProvider {
     static var previews: some View {
-        // Create a dummy coordinator for preview purposes
-        let previewCoordinator = AuthCoordinator()
+        
+        let previewCoordinator = AppCoordinator()
 
-        // Pass the dummy coordinator to the OTPViewModel for the preview
-        OTPView(viewModel: OTPViewModel(email: "", coordinator: previewCoordinator))    }
+       
+        OTPView(viewModel: OTPViewModel(email: "", coordinator: previewCoordinator))  
+    }
 }
 

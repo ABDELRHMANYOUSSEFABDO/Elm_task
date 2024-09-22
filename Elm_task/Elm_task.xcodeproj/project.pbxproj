@@ -39,6 +39,21 @@
 		BDE148472C9F54B800F47DCE /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE148462C9F54B800F47DCE /* AuthCoordinator.swift */; };
 		BDE1484A2C9F558700F47DCE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE148492C9F558700F47DCE /* RootView.swift */; };
 		BDE1484C2C9F55C100F47DCE /* AuthFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE1484B2C9F55C100F47DCE /* AuthFlowView.swift */; };
+		BDE1484F2C9F6A0A00F47DCE /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE1484E2C9F6A0A00F47DCE /* KeychainManager.swift */; };
+		BDE148512C9F6BA300F47DCE /* IncidentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE148502C9F6BA300F47DCE /* IncidentCoordinator.swift */; };
+		BDE148572C9F6C9F00F47DCE /* incidentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE148562C9F6C9F00F47DCE /* incidentModel.swift */; };
+		BDE148592C9F6EB300F47DCE /* IncidentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE148582C9F6EB300F47DCE /* IncidentService.swift */; };
+		BDE1485B2C9F70F100F47DCE /* IncidentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE1485A2C9F70F100F47DCE /* IncidentListViewModel.swift */; };
+		BDE1485F2C9F71D600F47DCE /* IncidentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE1485E2C9F71D600F47DCE /* IncidentListView.swift */; };
+		BDE148612C9F720C00F47DCE /* IncidentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE148602C9F720C00F47DCE /* IncidentRow.swift */; };
+		BDE148642C9F739400F47DCE /* MockIncidentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE148632C9F739400F47DCE /* MockIncidentService.swift */; };
+		BDE148662C9F744F00F47DCE /* IncidentFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE148652C9F744F00F47DCE /* IncidentFlowView.swift */; };
+		BDE533F92C9F96190026C91A /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE533F82C9F96190026C91A /* DashboardModel.swift */; };
+		BDE533FC2C9F96C00026C91A /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE533FB2C9F96C00026C91A /* DashboardViewModel.swift */; };
+		BDE533FF2C9F96F50026C91A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE533FE2C9F96F50026C91A /* DashboardView.swift */; };
+		BDE534022C9F9FE10026C91A /* AddIncidentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE534012C9F9FE00026C91A /* AddIncidentListViewModel.swift */; };
+		BDE534042C9FA2170026C91A /* NewIncidentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE534032C9FA2170026C91A /* NewIncidentView.swift */; };
+		BDE534062C9FA5E50026C91A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE534052C9FA5E50026C91A /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +109,21 @@
 		BDE148462C9F54B800F47DCE /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		BDE148492C9F558700F47DCE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		BDE1484B2C9F55C100F47DCE /* AuthFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowView.swift; sourceTree = "<group>"; };
+		BDE1484E2C9F6A0A00F47DCE /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		BDE148502C9F6BA300F47DCE /* IncidentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentCoordinator.swift; sourceTree = "<group>"; };
+		BDE148562C9F6C9F00F47DCE /* incidentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = incidentModel.swift; sourceTree = "<group>"; };
+		BDE148582C9F6EB300F47DCE /* IncidentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentService.swift; sourceTree = "<group>"; };
+		BDE1485A2C9F70F100F47DCE /* IncidentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentListViewModel.swift; sourceTree = "<group>"; };
+		BDE1485E2C9F71D600F47DCE /* IncidentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentListView.swift; sourceTree = "<group>"; };
+		BDE148602C9F720C00F47DCE /* IncidentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentRow.swift; sourceTree = "<group>"; };
+		BDE148632C9F739400F47DCE /* MockIncidentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockIncidentService.swift; sourceTree = "<group>"; };
+		BDE148652C9F744F00F47DCE /* IncidentFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentFlowView.swift; sourceTree = "<group>"; };
+		BDE533F82C9F96190026C91A /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
+		BDE533FB2C9F96C00026C91A /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		BDE533FE2C9F96F50026C91A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		BDE534012C9F9FE00026C91A /* AddIncidentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncidentListViewModel.swift; sourceTree = "<group>"; };
+		BDE534032C9FA2170026C91A /* NewIncidentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIncidentView.swift; sourceTree = "<group>"; };
+		BDE534052C9FA5E50026C91A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +174,7 @@
 		BDD751782C9EEB6500A9A727 /* Elm_task */ = {
 			isa = PBXGroup;
 			children = (
+				BDE1484D2C9F69F800F47DCE /* Services */,
 				BDE148482C9F557A00F47DCE /* Root */,
 				BDD751C42C9F124F00A9A727 /* Network */,
 				BDD751BC2C9F010000A9A727 /* Coordinator */,
@@ -216,6 +247,8 @@
 		BDD751B72C9EFFBC00A9A727 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				BDE533F42C9F93BC0026C91A /* Dashboard */,
+				BDE148522C9F6C5C00F47DCE /* incident */,
 				BDD751CF2C9F18FB00A9A727 /* Auth */,
 				BDD751B82C9EFFE100A9A727 /* Splash */,
 			);
@@ -244,6 +277,7 @@
 			children = (
 				BDD751BD2C9F011A00A9A727 /* AppCoordinator.swift */,
 				BDE148462C9F54B800F47DCE /* AuthCoordinator.swift */,
+				BDE148502C9F6BA300F47DCE /* IncidentCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -264,6 +298,7 @@
 				BDD751C92C9F12F600A9A727 /* NetworkService.swift */,
 				BDD751CD2C9F183A00A9A727 /* APIConstants.swift */,
 				BDD751D62C9F1D1600A9A727 /* AuthService.swift */,
+				BDE148582C9F6EB300F47DCE /* IncidentService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -350,8 +385,98 @@
 			children = (
 				BDE148492C9F558700F47DCE /* RootView.swift */,
 				BDE1484B2C9F55C100F47DCE /* AuthFlowView.swift */,
+				BDE148652C9F744F00F47DCE /* IncidentFlowView.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		BDE1484D2C9F69F800F47DCE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BDE1484E2C9F6A0A00F47DCE /* KeychainManager.swift */,
+				BDE534052C9FA5E50026C91A /* LocationManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BDE148522C9F6C5C00F47DCE /* incident */ = {
+			isa = PBXGroup;
+			children = (
+				BDE148622C9F737A00F47DCE /* mock */,
+				BDE148552C9F6C8100F47DCE /* Model */,
+				BDE148542C9F6C7800F47DCE /* ViewModel */,
+				BDE148532C9F6C7100F47DCE /* View */,
+			);
+			path = incident;
+			sourceTree = "<group>";
+		};
+		BDE148532C9F6C7100F47DCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDE1485E2C9F71D600F47DCE /* IncidentListView.swift */,
+				BDE148602C9F720C00F47DCE /* IncidentRow.swift */,
+				BDE534032C9FA2170026C91A /* NewIncidentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDE148542C9F6C7800F47DCE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BDE1485A2C9F70F100F47DCE /* IncidentListViewModel.swift */,
+				BDE534012C9F9FE00026C91A /* AddIncidentListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BDE148552C9F6C8100F47DCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDE148562C9F6C9F00F47DCE /* incidentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDE148622C9F737A00F47DCE /* mock */ = {
+			isa = PBXGroup;
+			children = (
+				BDE148632C9F739400F47DCE /* MockIncidentService.swift */,
+			);
+			path = mock;
+			sourceTree = "<group>";
+		};
+		BDE533F42C9F93BC0026C91A /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				BDE533FD2C9F96E00026C91A /* Viwe */,
+				BDE533FA2C9F96AD0026C91A /* ViewModel */,
+				BDE533F52C9F93E10026C91A /* Model */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		BDE533F52C9F93E10026C91A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDE533F82C9F96190026C91A /* DashboardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDE533FA2C9F96AD0026C91A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BDE533FB2C9F96C00026C91A /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BDE533FD2C9F96E00026C91A /* Viwe */ = {
+			isa = PBXGroup;
+			children = (
+				BDE533FE2C9F96F50026C91A /* DashboardView.swift */,
+			);
+			path = Viwe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -555,22 +680,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE148642C9F739400F47DCE /* MockIncidentService.swift in Sources */,
+				BDE533F92C9F96190026C91A /* DashboardModel.swift in Sources */,
 				BDD7517C2C9EEB6500A9A727 /* ContentView.swift in Sources */,
 				BDE1484C2C9F55C100F47DCE /* AuthFlowView.swift in Sources */,
 				BDD751B62C9EFEC200A9A727 /* AppSpacing.swift in Sources */,
 				BDD751A52C9EF7C400A9A727 /* Colors.swift in Sources */,
+				BDE534042C9FA2170026C91A /* NewIncidentView.swift in Sources */,
+				BDE148612C9F720C00F47DCE /* IncidentRow.swift in Sources */,
+				BDE1485B2C9F70F100F47DCE /* IncidentListViewModel.swift in Sources */,
+				BDE534022C9F9FE10026C91A /* AddIncidentListViewModel.swift in Sources */,
 				BDD751C82C9F129E00A9A727 /* HTTPMethod.swift in Sources */,
 				BDE148472C9F54B800F47DCE /* AuthCoordinator.swift in Sources */,
 				BDD751D92C9F1E7D00A9A727 /* LoginViewModel.swift in Sources */,
+				BDE1484F2C9F6A0A00F47DCE /* KeychainManager.swift in Sources */,
+				BDE1485F2C9F71D600F47DCE /* IncidentListView.swift in Sources */,
+				BDE148512C9F6BA300F47DCE /* IncidentCoordinator.swift in Sources */,
 				BDD751C12C9F019500A9A727 /* SplashViewModel.swift in Sources */,
 				BDD751B42C9EFE9500A9A727 /* Components.swift in Sources */,
 				BDD751BE2C9F011A00A9A727 /* AppCoordinator.swift in Sources */,
+				BDE533FF2C9F96F50026C91A /* DashboardView.swift in Sources */,
 				BDD751D52C9F1B0300A9A727 /* Model.swift in Sources */,
+				BDE148572C9F6C9F00F47DCE /* incidentModel.swift in Sources */,
+				BDE148662C9F744F00F47DCE /* IncidentFlowView.swift in Sources */,
 				BDE1484A2C9F558700F47DCE /* RootView.swift in Sources */,
 				BDD751CE2C9F183A00A9A727 /* APIConstants.swift in Sources */,
 				BDD751DB2C9F1EB500A9A727 /* LoginView.swift in Sources */,
 				BDD751A72C9EFBDE00A9A727 /* Typography.swift in Sources */,
 				BDD7517A2C9EEB6500A9A727 /* Elm_taskApp.swift in Sources */,
+				BDE533FC2C9F96C00026C91A /* DashboardViewModel.swift in Sources */,
 				BDD751BB2C9F004D00A9A727 /* SplashView.swift in Sources */,
 				BDE148412C9F436100F47DCE /* OTPViewModel.swift in Sources */,
 				BDD751D72C9F1D1600A9A727 /* AuthService.swift in Sources */,
@@ -578,6 +716,8 @@
 				BDE148452C9F440900F47DCE /* OtpModel.swift in Sources */,
 				BDE148432C9F438C00F47DCE /* OTPView.swift in Sources */,
 				BDD751C62C9F128700A9A727 /* NetworkError.swift in Sources */,
+				BDE534062C9FA5E50026C91A /* LocationManager.swift in Sources */,
+				BDE148592C9F6EB300F47DCE /* IncidentService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

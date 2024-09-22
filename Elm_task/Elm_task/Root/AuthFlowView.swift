@@ -8,14 +8,16 @@
 import SwiftUI
 struct AuthFlowView: View {
     @EnvironmentObject var authCoordinator: AuthCoordinator
-
+    @EnvironmentObject var appCoordinator: AppCoordinator
+    
+    
     var body: some View {
         switch authCoordinator.currentView {
         case .login:
             LoginView(viewModel: LoginViewModel(coordinator: authCoordinator))
         case .otp:
             if let email = authCoordinator.getEmail() {
-                OTPView(viewModel: OTPViewModel(email: email, coordinator: authCoordinator))
+                OTPView(viewModel: OTPViewModel(email: email, coordinator: appCoordinator))
             }
         }
     }

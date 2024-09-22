@@ -15,7 +15,7 @@ class SplashViewModel: ObservableObject {
     }
 
     func startSplashScreen() {
-        // Simulate some initialization process, like authentication or setup
+       
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             self.coordinator.navigateToAuthFlow()
         }

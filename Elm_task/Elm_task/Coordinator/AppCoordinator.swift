@@ -10,18 +10,21 @@ import SwiftUI
 
 
 class AppCoordinator: ObservableObject {
-    @Published var currentView: AppFlow = .splash
-       @Published var authCoordinator = AuthCoordinator()
-    
+    @Published var currentView: AppFlow = .incident
+    @Published var authCoordinator = AuthCoordinator()
+    @Published var incidentCoordinator = IncidentCoordinator()
+
     func navigateToAuthFlow() {
-           currentView = .auth
-       }
+        currentView = .auth
+    }
+    
+   
+}
 
-   }
+enum AppFlow {
+    case splash
+    case auth
+    case incident
+}
 
-   enum AppFlow {
-       case splash
-       case auth
-       
-   }
 

@@ -13,9 +13,10 @@ struct APIConstants {
     struct Endpoints {
         static let login = "/login"
         static let otpVerify = "/verify-otp"
-        static let incidents = "/incidents"
-        static let postIncident = "/incident"
-        static let changeStatus = "/incident/status"
+        static let incidents = "/incident"
+        static let dashboard = "/dashboard"
+        static let type = "/types"
+
     }
 }
 

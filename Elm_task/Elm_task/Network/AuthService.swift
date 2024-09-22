@@ -10,7 +10,7 @@ import Combine
 
 class AuthService {
     
-    // Login request that does not require JSON decoding
+    
     func login(email: String) -> AnyPublisher<String, NetworkError> {
         guard let url = URLBuilder.buildURL(for: APIConstants.Endpoints.login) else {
             return Fail(error: NetworkError.invalidURL)
@@ -23,7 +23,7 @@ class AuthService {
                 .eraseToAnyPublisher()
         }
 
-        // Set requiresDecoding to false for login
+        
         return NetworkService.shared.request(url: url, method: .post, body: body, requiresDecoding: false)
             .mapError { NetworkError.networkError($0) }
             .eraseToAnyPublisher()

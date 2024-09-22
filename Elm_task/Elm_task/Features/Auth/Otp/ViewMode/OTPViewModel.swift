@@ -17,11 +17,11 @@ class OTPViewModel: ObservableObject {
 
     private var cancellables = Set<AnyCancellable>()
     private let authService: AuthService
-    private let coordinator: AuthCoordinator
+    private let appCoordinator: AppCoordinator
 
-    init(email: String,authService: AuthService = AuthService(), coordinator: AuthCoordinator) {
+    init(email: String,authService: AuthService = AuthService(), coordinator: AppCoordinator) {
         self.authService = authService
-        self.coordinator = coordinator
+        self.appCoordinator = coordinator
         self.email = email
     }
 
@@ -47,8 +47,14 @@ class OTPViewModel: ObservableObject {
                 }
             } receiveValue: { response in
                 // Handle successful OTP verification
+                KeychainManager.save(token: response.token, forKey: "authToken")
+
+                self.navigateToIncidentList()
                 self.otpSuccess = true
             }
             .store(in: &self.cancellables)
     }
+    func navigateToIncidentList() {
+           appCoordinator.currentView = .incident
+       }
 }
